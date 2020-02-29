@@ -7,12 +7,38 @@
         <h2>Login</h2>
         <form action="processa.php">
             Login:<br>
-            <input type="text" name="login"><br>
+            <input type="text" name="login"><br><br>
             Senha:<br>
             <!--tipo password mais adequado... caracteres escondidos-->
             <input type="password" name="senha"><br><br>
             <!--button ou submit aparece na url-->
             <input type="button" value="Logar"><br>
+        </form>
+        <form>
+            <h2>Cadastre-se</h2>
+            Login:<br>
+            <input type="text" name="login"><br><br>
+            Senha:<br>
+            <input type="text" name="senha"><br>
+            <h7>Utilize caracteres especiais como &gt; &bsol; &rcub; &lt; </h7><br><br>
+            Sexo:<br>
+            <input type="radio" name="sexo" value="F"> Feminino<br>
+            <input type="radio" name="sexo" value="M"> Maculino<br>
+            <input type="radio" name="sexo" value="NB"> Não-binário<br><br>
+            Email:<br>
+            <input type="text" name="email"><br><br>
+            Estado:<br>
+            <select name="estado">
+                <option>RJ</option>
+                <option>SP</option>
+                <option>MG</option>
+            </select><br>
+            <h7>Enviamos apenas para os Estados de São Paulo, Rio de Janeiro e Minas Gerais</h7><br>
+            <h7>Caso seja de outro, entre em contato com o telefone (21)2222-2222</h7><br><br>
+            Gostaria de comprar e/ou vender?<br>
+            <input type="checkbox" name="ação" value="C"> Comprar<br>
+            <input type="checkbox" name="ação" value="V">Vender<br><br>
+            <input type="submit" value="Finalizar"><br>
         </form>
     </body>
 </html>
